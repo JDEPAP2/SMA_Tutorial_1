@@ -1,3 +1,6 @@
+const { createDefaultPreset } = require('ts-jest')
+/** @type {import('ts-jest').JestConfigWithTsJest} */
+
 module.exports = {
     roots: [
     "<rootDir>/test"
@@ -7,8 +10,8 @@ module.exports = {
     "**/?(*.)+(spec|test).+(ts|tsx|js)"
     ],
     transform: {
-    "^.+\\.(ts|tsx)$": "ts-jest"
-    },
+        ...createDefaultPreset().transform,
+      },
     collectCoverageFrom: [
     "**/*.{js,jsx,ts,tsx}",
     "!**/*.d.ts",
