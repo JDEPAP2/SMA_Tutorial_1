@@ -13,7 +13,7 @@
     "lint": "eslint ./src --ext .ts"
   },
   "keywords": [],
-  "author": "Juan Vicente Pradilla Cerón",
+  "author": "Jose David Escobar Prada",
   "license": "LGPL",
   "devDependencies": {
     "@types/istanbul-lib-coverage": "^2.0.6",
